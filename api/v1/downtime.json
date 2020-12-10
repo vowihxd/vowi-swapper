@@ -1,6 +1,6 @@
 {
     "downtime": [
-        {"active": "true"},
-        {"reason": "Vowi Is Cute"}
+        {"active": "false"},
+        {"reason": ""}
     ]
 }
