@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>G4 Swapper | Black Shield</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+  <link rel="stylesheet" href="assets/css/items.css">
+</head>
+<body>
+  <div class="card">
+    <div class="card-header">
+      <div class="pic">
+        <img src="assets/images/black-shield.png" alt="icon">
+      </div>
+      <div class="itemName">Black Shield</div>
+      <div class="info">this backpack replace's red shield.<br><br>By: Aqua</div>
+      <a onclick="Send(convert)" class="btn">Convert</a>
+      <a onclick="Send(revert)" class="btn">Revert</a>
+      <a onclick="main()" class="btn">Connect To Client</a>
+    </div>
+</body>
+</html>
+
+<script>
+  var endpoint = "ws://localhost:69";
+  
+  var convert = "{    \"common\": [        {\"requestType\": \"swap\"},        {\"swapName\": \"Converting Red Shield To Black Shield\"}    ],    \"bytes\": [        {\"Swap1Search\": \"CIceJMale_CommandoBR_knightV01\"},        {\"Swap1Replace\": \"CIceJMale_CommandoBR_knightV00\"},        {\"Swap1Offset\": \"46900000\"},        {\"Swap1Pak\": \"pakchunk10_s1-WindowsClient.ucas\"},        {\"Swap2Search\": \"null\"},        {\"Swap2Replace\": \"null\"},        {\"Swap2Offset\": \"null\"},        {\"Swap2Pak\": \"null\"},        {\"Swap3Search\": \"null\"},        {\"Swap3Replace\": \"null\"},        {\"Swap3Offset\": \"null\"},        {\"Swap3Pak\": \"null\"},        {\"Swap4Search\": \"null\"},        {\"Swap4Replace\": \"null\"},        {\"Swap4Offset\": \"null\"},        {\"Swap4Pak\": \"null\"},        {\"Swap5Search\": \"null\"},        {\"Swap5Replace\": \"null\"},        {\"Swap5Offset\": \"null\"},        {\"Swap5Pak\": \"null\"},        {\"Swap6Search\": \"null\"},        {\"Swap6Replace\": \"null\"},        {\"Swap6Offset\": \"null\"},        {\"Swap6Pak\": \"null\"},        {\"Swap7Search\": \"null\"},        {\"Swap7Replace\": \"null\"},        {\"Swap7Offset\": \"null\"},        {\"Swap7Pak\": \"null\"},        {\"Swap8Search\": \"null\"},        {\"Swap8Replace\": \"null\"},        {\"Swap8Offset\": \"null\"},        {\"Swap8Pak\": \"null\"},        {\"Swap9Search\": \"null\"},        {\"Swap9Replace\": \"null\"},        {\"Swap9Offset\": \"null\"},        {\"Swap9Pak\": \"null\"},        {\"Swap10Search\": \"null\"},        {\"Swap10Replace\": \"null\"},        {\"Swap10Offset\": \"null\"},        {\"Swap10Pak\": \"null\"},        {\"Swap11Search\": \"null\"},        {\"Swap11Replace\": \"null\"},        {\"Swap11Offset\": \"null\"},        {\"Swap11Pak\": \"null\"},        {\"Swap12Search\": \"null\"},        {\"Swap12Replace\": \"null\"},        {\"Swap12Offset\": \"null\"},        {\"Swap12Pak\": \"null\"},        {\"Swap13Search\": \"null\"},        {\"Swap13Replace\": \"null\"},        {\"Swap13Offset\": \"null\"},        {\"Swap13Pak\": \"null\"},        {\"Swap14Search\": \"null\"},        {\"Swap14Replace\": \"null\"},        {\"Swap14Offset\": \"null\"},        {\"Swap14Pak\": \"null\"},        {\"Swap15Search\": \"null\"},        {\"Swap15Replace\": \"null\"},        {\"Swap15Offset\": \"null\"},        {\"Swap15Pak\": \"null\"},        {\"Swap16Search\": \"null\"},        {\"Swap16Replace\": \"null\"},        {\"Swap16Offset\": \"null\"},        {\"Swap16Pak\": \"null\"},        {\"Swap17Search\": \"null\"},        {\"Swap17Replace\": \"null\"},        {\"Swap17Offset\": \"null\"},        {\"Swap17Pak\": \"null\"},        {\"Swap18Search\": \"null\"},        {\"Swap18Replace\": \"null\"},        {\"Swap18Offset\": \"null\"},        {\"Swap18Pak\": \"null\"},        {\"Swap19Search\": \"null\"},        {\"Swap19Replace\": \"null\"},        {\"Swap19Offset\": \"null\"},        {\"Swap19Pak\": \"null\"},        {\"Swap20Search\": \"null\"},        {\"Swap20Replace\": \"null\"},        {\"Swap20Offset\": \"null\"},        {\"Swap20Pak\": \"null\"}    ]}";
+  
+  var revert = "{    \"common\": [        {\"requestType\": \"swap\"}    ],    \"bytes\": [        {\"Swap1Search\": \"CIceJMale_CommandoBR_knightV00\"},        {\"Swap1Replace\": \"CIceJMale_CommandoBR_knightV01\"},        {\"Swap1Offset\": \"46900000\"},        {\"Swap1Pak\": \"pakchunk10_s1-WindowsClient.ucas\"},        {\"Swap2Search\": \"null\"},        {\"Swap2Replace\": \"null\"},        {\"Swap2Offset\": \"null\"},        {\"Swap2Pak\": \"null\"},        {\"Swap3Search\": \"null\"},        {\"Swap3Replace\": \"null\"},        {\"Swap3Offset\": \"null\"},        {\"Swap3Pak\": \"null\"},        {\"Swap4Search\": \"null\"},        {\"Swap4Replace\": \"null\"},        {\"Swap4Offset\": \"null\"},        {\"Swap4Pak\": \"null\"},        {\"Swap5Search\": \"null\"},        {\"Swap5Replace\": \"null\"},        {\"Swap5Offset\": \"null\"},        {\"Swap5Pak\": \"null\"},        {\"Swap6Search\": \"null\"},        {\"Swap6Replace\": \"null\"},        {\"Swap6Offset\": \"null\"},        {\"Swap6Pak\": \"null\"},        {\"Swap7Search\": \"null\"},        {\"Swap7Replace\": \"null\"},        {\"Swap7Offset\": \"null\"},        {\"Swap7Pak\": \"null\"},        {\"Swap8Search\": \"null\"},        {\"Swap8Replace\": \"null\"},        {\"Swap8Offset\": \"null\"},        {\"Swap8Pak\": \"null\"},        {\"Swap9Search\": \"null\"},        {\"Swap9Replace\": \"null\"},        {\"Swap9Offset\": \"null\"},        {\"Swap9Pak\": \"null\"},        {\"Swap10Search\": \"null\"},        {\"Swap10Replace\": \"null\"},        {\"Swap10Offset\": \"null\"},        {\"Swap10Pak\": \"null\"},        {\"Swap11Search\": \"null\"},        {\"Swap11Replace\": \"null\"},        {\"Swap11Offset\": \"null\"},        {\"Swap11Pak\": \"null\"},        {\"Swap12Search\": \"null\"},        {\"Swap12Replace\": \"null\"},        {\"Swap12Offset\": \"null\"},        {\"Swap12Pak\": \"null\"},        {\"Swap13Search\": \"null\"},        {\"Swap13Replace\": \"null\"},        {\"Swap13Offset\": \"null\"},        {\"Swap13Pak\": \"null\"},        {\"Swap14Search\": \"null\"},        {\"Swap14Replace\": \"null\"},        {\"Swap14Offset\": \"null\"},        {\"Swap14Pak\": \"null\"},        {\"Swap15Search\": \"null\"},        {\"Swap15Replace\": \"null\"},        {\"Swap15Offset\": \"null\"},        {\"Swap15Pak\": \"null\"},        {\"Swap16Search\": \"null\"},        {\"Swap16Replace\": \"null\"},        {\"Swap16Offset\": \"null\"},        {\"Swap16Pak\": \"null\"},        {\"Swap17Search\": \"null\"},        {\"Swap17Replace\": \"null\"},        {\"Swap17Offset\": \"null\"},        {\"Swap17Pak\": \"null\"},        {\"Swap18Search\": \"null\"},        {\"Swap18Replace\": \"null\"},        {\"Swap18Offset\": \"null\"},        {\"Swap18Pak\": \"null\"},        {\"Swap19Search\": \"null\"},        {\"Swap19Replace\": \"null\"},        {\"Swap19Offset\": \"null\"},        {\"Swap19Pak\": \"null\"},        {\"Swap20Search\": \"null\"},        {\"Swap20Replace\": \"null\"},        {\"Swap20Offset\": \"null\"},        {\"Swap20Pak\": \"null\"}    ]}";
+  
+  function main() {
+    StartConnection();
+  }
+  
+  function StartConnection() {
+    websocket = new WebSocket(endpoint);
+    websocket.onopen = function(evt) { Start(evt) };
+    websocket.onclose = function(evt) { CloseConnection(evt) };
+    websocket.onmessage = function(evt) { Message(evt) };
+    websocket.onerror = function(evt) { ShowError(evt) };
+  }
+  
+  function Start(evt) {
+    alert("[G4] Connection Started")
+  }
+  
+  function CloseConnection(evt) {
+    alert("[G4] Ended Connection")
+  }
+  
+  function Message(evt) {
+    alert(evt.data)
+    websocket.close();
+  }
+  
+  function ShowError(evt) {
+    alert("[G4] Could Not Connect To Client, Have You Installed It?")
+  }
+  
+  function Send(message) {
+    websocket.send(message);
+  }
+  </script>
