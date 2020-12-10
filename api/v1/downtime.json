@@ -1,6 +1,6 @@
 {
     "downtime": [
-        {"active": "true"},
+        {"active": "false"},
         {"reason": ""}
     ]
 }
