@@ -1,0 +1,189 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  cursor:url(assets\images\cursor.png), auto;
+}
+
+body{
+  height: 100vh;
+  background-color: #44393A;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.card{
+  width: 280px;
+  height: 350px;
+  text-align: center;
+  border-radius: 1px;
+  overflow: hidden;
+}
+
+.card-header{
+  
+  padding: 15px;
+}
+
+.card-lower{
+  text-align: right;
+  padding: 15px;
+}
+
+.card{
+  width: 456px;
+  height: 456px;
+  text-align: left;
+  border-radius: 1px;
+}
+
+.pic{
+  display: inline-block;
+  padding: 8px;
+  background: linear-gradient(130deg, #74b9ff, #e66767);
+  margin: auto;
+  border-radius: 50%;
+  background-size: 200% 200%;
+  animation: animated-gradient 2s linear infinite;
+}
+
+@keyframes animated-gradient{
+  25%{
+    background-position: left bottom;
+  }
+  50%{
+    background-position: right bottom;
+  }
+  75%{
+    background-position: right top;
+  }
+  100%{
+    background-position: left top;
+  }
+}
+
+.logo{
+  color:aqua;
+ text-align: center;
+ padding: 13;
+}
+
+.header{
+  margin-top: 40px;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding:10px;
+
+}
+
+.image img{
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.pic img{
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  cursor:url(assets\images\cursor.png), auto;
+}
+
+.itemName{
+  color: #3339FF;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 10px 0;
+  cursor:url(assets\images\cursor.png), auto;
+}
+
+.info{
+  font-size: 18px;
+  color: #e66767;
+  cursor:url(assets\images\cursor.png), auto;
+}
+
+.sm{
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  cursor:url(assets\images\cursor.png), auto;
+}
+
+.sm a{
+  color: #99AAB5;
+  width: 56px;
+  font-size: 22px;
+  transition: .3s linear;
+  cursor:url(assets\images\cursor.png), auto;
+}
+
+.sm a:hover{
+  color: #3339FF;
+  cursor:url(assets\images\cursor.png), auto;
+}
+
+.btn{
+  display: inline-block;
+  padding: 12px 50px;
+  color: #3339FF;
+  border: 2px solid #3339FF;
+  border-radius: 6px;
+  margin-top: 16px;
+  transition: .3s linear;
+  cursor:url(assets\images\cursor.png), auto;
+  align-self: center;
+}
+
+.btn:hover{
+  background: #33A8FF;
+  color: #f2f2f2;
+  cursor:url(assets\images\cursor.png), auto;
+}
+
+.footer{
+  background: #FFFFFF;
+  padding: 60px 10px;
+  cursor:url(assets\images\cursor.png), auto;
+}
+
+.item{
+  width: 20%;
+  display: inline-block;
+  box-shadow: 2px 2px 20px black;
+  border-radius: 5px; 
+  margin: 2%;
+}
+
+.item span{
+  display: block;
+  color: #2c3a47;
+  font-size: 30px;
+  cursor:url(assets\images\cursor.png), auto;
+}
+
+.border{
+  width: 1px;
+  height: 30px;
+  background: #bbb;
+  cursor:url(assets\images\cursor.png), auto;
+}
+
+.float-container {
+  padding: 0px;
+  cursor:url(assets\images\cursor.png), auto;
+}
+
+.float-child {
+  width: 25%;
+  float: left;
+  padding: 5px;
+  cursor:url(assets\images\cursor.png), auto;
+} 
